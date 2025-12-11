@@ -1,18 +1,16 @@
 # Virtual environment
 .venv/
 venv/
-ENV/
 
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-build/
-dist/
 *.egg-info/
-.eggs/
+dist/
+build/
+
+# Environment
+.env
 
 # IDE
 .idea/
@@ -20,15 +18,15 @@ dist/
 *.swp
 *.swo
 
-# Environment
-.env
-.env.local
-
 # Testing
 .pytest_cache/
 .coverage
-htmlcov/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Temporary test files
+test_dedup.py
+test_local.py
+test_openai.py
