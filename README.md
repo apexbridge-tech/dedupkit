@@ -1,11 +1,14 @@
 # DedupKit
 
-Semantic deduplication using embeddings.
-
+[![PyPI version](https://badge.fury.io/py/dedupkit.svg)](https://pypi.org/project/dedupkit/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 DedupKit detects duplicate or similar text using semantic embeddings. Unlike keyword matching, it understands **meaning** — so "Login button is broken" matches "Can't sign in".
+
+## 🚀 Live Demo
+
+Try it now: **[dedupkit.streamlit.app](https://dedupkit-jphilj4dxj9bouvqricmec.streamlit.app/)**
 
 ## Installation
 ```bash
