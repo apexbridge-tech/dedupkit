@@ -1,2 +1,2 @@
 streamlit
-dedupkit[local]
+dedupkit[local]==0.1.1

@@ -1,6 +1,6 @@
 [project]
 name = "dedupkit"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     { name = "Alexander Budanov", email = "alex@apexbridge.tech" }
 ]
