@@ -1,6 +1,16 @@
 from .base import EmbeddingProvider
-from .openai import OpenAIEmbeddingProvider, OpenAIEmbeddingModels
 from .embedding import EmbeddingModel
-from .local import LocalEmbeddingProvider
 
-__all__ = ['EmbeddingProvider', "OpenAIEmbeddingProvider", "OpenAIEmbeddingModels", "EmbeddingModel", "LocalEmbeddingProvider"]
+__all__ = ["EmbeddingProvider", "EmbeddingModel"]
+
+try:
+    from .openai import OpenAIProvider, EmbeddingModels
+    __all__ += ["OpenAIProvider", "EmbeddingModels"]
+except ImportError:
+    pass  # openai not installed
+
+try:
+    from .local import LocalEmbeddingProvider, SentenceTransformerEmbeddingModels
+    __all__ += ["LocalEmbeddingProvider", "SentenceTransformerEmbeddingModels"]
+except ImportError:
+    pass  # sentence-transformers not installed
